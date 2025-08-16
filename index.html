@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Kelly Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Brandan — About & Resume</title>
+  <meta name="description" content="About Brandan with resume on one page">
+  <meta name="keywords" content="Brandan, resume, portfolio, UCLA, software">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,60 +27,32 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Kelly
-  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Anchor offset fix for sticky header (prevents section titles being hidden) -->
+  <style>
+    :root { scroll-padding-top: 90px; }
+    #resume { scroll-margin-top: 90px; }
+  </style>
 </head>
 
-<body class="index-page">
+<body class="about-page">
 
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Kelly</h1>
+        <h1 class="sitename">Brandan</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#about" class="active">About</a></li>
+          <li><a href="#resume">Resume</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
       <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        
       </div>
 
     </div>
@@ -88,47 +60,151 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container section-title text-center" data-aos="fade-up">
+        <h2 class="text-uppercase mb-2">About</h2>
+        
+      </div>
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 align-items-start">
+          <div class="col-lg-4">
+            <img src="assets/img/Headshot.png" class="img-fluid rounded-4 shadow-sm" alt="Brandan Bright headshot">
+          </div>
 
-      <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h2>Kelly Adams</h2>
-            <p>I'm a professional illustrator from San Francisco</p>
-            <a href="about.html" class="btn-get-started">About Me</a>
+          <div class="col-lg-8 content">
+            <h2 class="fw-bold mb-3">Computer Science @ UCLA</h2>
+
+            <p class="mb-3" highlight-text>
+              Hey there! I'm Brandan, a CS student from Southern California. In my freetime, I enjoy maintaining <br>
+               a consistent weightlifting routine and spending time outdoors playing soccer or table tennis.
+              
+            </p>
+
+            <p class="mb-3">
+              This year, I’m interning at Cedars-Sinai, networking a wearable device and building a companion app used by clinicians. <br>
+          
+              In the lab at UCLA, I work on projects that protect privacy and make computer vision and wireless systems more reliable.
+            </p>
+            <div class="about-social-links mt-4">
+              <a href="https://github.com/RaisinBrand" target="_blank" class="me-3">
+                <i class="bi bi-github" style="font-size: 1.5rem;"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/brandan-bright" target="_blank">
+                <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
+              </a>
+            </div>
+
+
+            <!-- Quick highlights (lightweight, non-technical) -->
+
+          </div>
+        </div><!-- End row -->
+
+        <!-- Hobbies row -->
+        <div class="row mb-3 mt-2">
+          <div class="col-lg-10">
+            <ul class="list-unstyled mb-2">
+            </ul>
           </div>
         </div>
       </div>
+    </section>
 
-    </section><!-- /Hero Section -->
+    <!-- Resume Section (now lives right after Skills) -->
+    <section id="resume" class="resume section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Education & professional experience</p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item pb-0">
+              <h4>University of California, Los Angeles</h4>
+              <p><em>Computer Science student graduating in 2027 with a focus on Machine Learning and System Security 
+                </em></p>
+              <ul>
+                <li>(949) 524-6525</li>
+                <li>brandansb@ucla.edu</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Professional Experience</h3>
+            <!-- Cedars-Sinai Internship -->
+            <div class="resume-item">
+              <h4>Software Engineer Intern - Mobile Dev & Networking</h4>
+              <h5>Mar 2025 – Present</h5>
+              <p><em>Cedars-Sinai - Surgical Innovation and Engineering, Los Angeles, CA</em></p>
+              <ul>
+                <li>Developed control software in C for motor reflex wearable neurostimulation devices, implementing TCP socket communication and BLE protocols to transmit sensor data from Arduino hardware to backend.</li>
+                <li>Designed and deployed networked mobile application in React Native with FastAPI backend for clinicians, enabling secure real-time data streaming from wearables to InfluxDB and AWS RDS.</li>
+                <li>Architected cloud infrastructure on AWS (Elastic Beanstalk, RDS, S3) to host backend APIs, ensuring scalable, low-latency device-to-cloud communication for live signal monitoring.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Software Engineer Intern - Backend</h4>
+              <h5>June 2024 - Sep 2024</h5>
+               <p><em>Hotb Software, Irvine, CA</em></p>
+              <ul>
+                <li>Designed 32 REST API endpoints in Express Node.js for financial loan assurance platform’s admin portal </li> 
+                <li>Implemented core administrative logic including CRUD operations for user loan application, role-based
+                    permission controls, and audit logging for data/files</li>  
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Research</h3>
+
+            <!-- LightPure -->
+            <div class="resume-item">
+              <h4>LightPure: Real-Time Adversarial Image Purification</h4>
+              <h5>Dec 2023 – Sep 2024</h5>
+              <p><em>Research Assistant, ML Researcher — SsysArch Lab, UCLA</em></p>
+              <ul>
+                <li>Co-authored ACM MobiCom ’24 paper on a two-step diffusion + one-shot Generative AI framework for adversarial purification on Jetson Nano.</li>
+                <li>Built and trained lightweight neural network achieving 10× faster and 2× more efficient image cleanup compared to prior methods.</li>
+              </ul>
+            </div>
+
+            <!-- Cloak of Invisibility -->
+            <div class="resume-item">
+              <h4>Cloak of Invisibility: Privacy-Preserving Video Streaming</h4>
+              <h5>Apr 2024 – May 2025</h5>
+              
+              <ul>
+                <li>Created real-time video pipeline that automatically blurs or hides private objects (people, screens) in live RGB-D camera feeds.</li>
+                <li>Integrated object detection with depth checks, achieving 88% accuracy at >30 FPS and SSIM ≈ 0.98.</li>
+              </ul>
+            </div>
+
+            <!-- Janus -->
+            <div class="resume-item">
+              <h4>Janus: Radio Frequency Spoofing</h4>
+              <h5>Jan 2025 – May 2025</h5>
+              
+              <ul>
+                <li>Developed signal generation model for the first over-the-air adversarial attack against Bluetooth device fingerprinting AI using SDRs.</li>
+                <li>Designed signal tweaks causing >95% misidentification at 2m and >60% at 6m, viable through walls.</li>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
 
   </main>
 
-  <footer id="footer" class="footer light-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Kelly</strong> <span>All Rights Reserved<br></span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer>
+  <footer id="footer" class="footer light-background"></footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -149,7 +225,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

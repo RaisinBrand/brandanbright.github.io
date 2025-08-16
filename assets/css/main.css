@@ -791,6 +791,12 @@ section,
   line-height: 0;
 }
 
+.highlight-text {
+  font-size: 1.45rem;   /* ~20px */
+  font-weight: 400;     /* slightly bolder */
+  line-height: 1.8;     /* keeps it readable */
+}
+
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
