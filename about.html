@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>About - Kelly Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Brandan — About & Resume</title>
+  <meta name="description" content="About Brandan with resume on one page">
+  <meta name="keywords" content="Brandan, resume, portfolio, UCLA, software">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,13 +27,11 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Kelly
-  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Anchor offset fix for sticky header (prevents section titles being hidden) -->
+  <style>
+    :root { scroll-padding-top: 90px; }
+    #resume { scroll-margin-top: 90px; }
+  </style>
 </head>
 
 <body class="about-page">
@@ -42,35 +40,17 @@
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Kelly</h1>
+        <h1 class="sitename">Brandan</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
+          <li><a href="#about" class="active">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -89,313 +69,212 @@
   <main class="main">
 
     <!-- About Section -->
-       <!-- About Section -->
     <section id="about" class="about section">
-
-      <!-- Section Title -->
       <div class="container section-title text-center" data-aos="fade-up">
         <h2 class="text-uppercase mb-2">About</h2>
         <p class="lead mb-0">Hey there! I'm Brandan, a CS student and researcher from Southern California.</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <!-- Row: image + text -->
         <div class="row gy-4 align-items-start">
-
-          <!-- Left: Headshot -->
           <div class="col-lg-4">
-            <!-- put your photo at assets/img/headshot.jpg -->
-            <img src="assets/img/headshot.jpg" class="img-fluid rounded-4 shadow-sm" alt="Brandan Bright headshot">
+            <img src="assets/img/Headshot.png" class="img-fluid rounded-4 shadow-sm" alt="Brandan Bright headshot">
           </div>
 
-          <!-- Right: Text block -->
           <div class="col-lg-8 content">
             <h2 class="fw-bold mb-3">Computer Science Student @ UCLA</h2>
-
             <p class="fst-italic">
               I’m pursuing my B.S. in Computer Science at UCLA. I build across backend, embedded systems, and applied ML.
             </p>
-
-            
-
             <p>
-              Currently I am a Software Engineer Intern at Cedars-Sinai, developing embedded software and a full-stack mobile application for a wearable neurostimulation device. 
+              Currently I am a Software Engineer Intern at Cedars-Sinai, developing embedded software and a full-stack mobile application for a wearable neurostimulation device.
               My work spans Python-based device control, FastAPI/AWS backend services, and a React Native client for real-time data visualization.
             </p>
             <p>
-              In research, I’ve contributed to multiple projects at the intersection of computer vision, privacy, and signal processing as a Student Researcher in the Secure Systems and Architectures Lab (SsysArch). 
-              I have built generative image processing software for adversarial defense, designed modules for 3D multi-camera object tracking and camera synchromization, and developed 
-              signal transformation pipeline to micic target device fingerprints.
+              In research, I’ve contributed to projects at the intersection of computer vision, privacy, and signal processing as a Student Researcher in the Secure Systems and Architectures Lab (SsysArch).
+              I have built generative image processing software for adversarial defense, designed modules for 3D multi-camera object tracking and camera synchronization, and developed
+              a signal transformation pipeline to mimic target device fingerprints.
+            </p>
           </div>
+        </div><!-- End row -->
 
-          <div class="row mb-3">
-              <div class="col-lg-10">
-                <ul class="list-unstyled mb-2">
-                  <li><strong>Hobbies:</strong> Weightlifting, Soccer, Table Tennis, Surfing</li>
-                </ul>
-              </div>
-            </div>
+        <!-- Hobbies row (separate row, properly closed) -->
+        <div class="row mb-3 mt-2">
+          <div class="col-lg-10">
+            <ul class="list-unstyled mb-2">
+              <li><strong>Hobbies:</strong> Weightlifting, Soccer, Table Tennis, Surfing</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
-    <!-- /About Section -->
 
     <!-- Skills Section -->
     <section id="skills" class="skills section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-        </div>
-
+        <p>Technical skills across software engineering, systems, and research.</p>
       </div>
 
-    </section><!-- /Skills Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Facts</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row skills-content skills-animation">
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div></div>
+            </div>
+            <div class="progress">
+              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div></div>
+            </div>
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>Python / FastAPI</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div></div>
+            </div>
+            <div class="progress">
+              <span class="skill"><span>Embedded Systems</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div></div>
+            </div>
+            <div class="progress">
+              <span class="skill"><span>Machine Learning / CV</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Resume Section (now lives right after Skills) -->
+    <section id="resume" class="resume section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Education & professional experience</p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item pb-0">
+              <h4>University of California, Los Angeles</h4>
+              <p><em>Computer Science student graduating in 2027 with a focus on Machine Learning and System Security 
+                </em></p>
+              <ul>
+                <li>(949) 524-6525</li>
+                <li>brandansb@ucla.edu</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Professional Experience</h3>
+            <!-- Cedars-Sinai Internship -->
+            <div class="resume-item">
+              <h4>Software Engineer Intern - Mobile Dev & Networking</h4>
+              <h5>Mar 2025 – Present</h5>
+              <p><em>Cedars-Sinai, Los Angeles, CA</em></p>
+              <ul>
+                <li>Developed control software in C for motor reflex wearable neurostimulation devices, implementing TCP socket communication and BLE protocols to transmit sensor data from Arduino hardware to backend.</li>
+                <li>Designed and deployed networked mobile application in React Native with FastAPI backend for clinicians, enabling secure real-time data streaming from wearables to InfluxDB and AWS RDS.</li>
+                <li>Architected cloud infrastructure on AWS (Elastic Beanstalk, RDS, S3) to host backend APIs, ensuring scalable, low-latency device-to-cloud communication for live signal monitoring.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Software Engineer Intern - Backend</h4>
+              <h5>June 2024 - Sep 2024</h5>
+               <p><em>Hotb Software, Irvine, CA</em></p>
+              <ul>
+                <li>Designed 32 REST API endpoints in Express Node.js for financial loan assurance platform’s admin portal </li> 
+                <li>Implemented core administrative logic including CRUD operations for user loan application, role-based
+                    permission controls, and audit logging for data/files</li>  
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Research</h3>
+
+            <!-- LightPure -->
+            <div class="resume-item">
+              <h4>LightPure: Real-Time Adversarial Image Purification</h4>
+              <h5>Dec 2023 – Sep 2024</h5>
+              <p><em>Research Assistant, ML Researcher — SsysArch Lab, UCLA</em></p>
+              <ul>
+                <li>Co-authored ACM MobiCom ’24 paper on a two-step diffusion + one-shot Generative AI framework for adversarial purification on Jetson Nano.</li>
+                <li>Built and trained lightweight neural network achieving 10× faster and 2× more efficient image cleanup compared to prior methods.</li>
+              </ul>
+            </div>
+
+            <!-- Cloak of Invisibility -->
+            <div class="resume-item">
+              <h4>Cloak of Invisibility: Privacy-Preserving Video Streaming</h4>
+              <h5>Apr 2024 – May 2025</h5>
+              
+              <ul>
+                <li>Created real-time video pipeline that automatically blurs or hides private objects (people, screens) in live RGB-D camera feeds.</li>
+                <li>Integrated object detection with depth checks, achieving 88% accuracy at >30 FPS and SSIM ≈ 0.98.</li>
+              </ul>
+            </div>
+
+            <!-- Janus -->
+            <div class="resume-item">
+              <h4>Janus: Radio Frequency Spoofing</h4>
+              <h5>Jan 2025 – May 2025</h5>
+              
+              <ul>
+                <li>Developed signal generation model for the first over-the-air adversarial attack against Bluetooth device fingerprinting AI using SDRs.</li>
+                <li>Designed signal tweaks causing >95% misidentification at 2m and >60% at 6m, viable through walls.</li>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional: Stats Section (kept after Resume) -->
+    <section id="stats" class="stats section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
-
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
               <p>Clients</p>
             </div>
-          </div><!-- End Stats Item -->
-
+          </div>
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
               <p>Projects</p>
             </div>
-          </div><!-- End Stats Item -->
-
+          </div>
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
               <p>Hours Of Support</p>
             </div>
-          </div><!-- End Stats Item -->
-
+          </div>
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
               <p>Workers</p>
             </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
           </div>
-          <div class="swiper-pagination"></div>
         </div>
-
       </div>
-
-    </section><!-- /Testimonials Section -->
+    </section>
 
   </main>
 
-  <footer id="footer" class="footer light-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Kelly</strong> <span>All Rights Reserved<br></span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer>
+  <footer id="footer" class="footer light-background"></footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -416,7 +295,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
